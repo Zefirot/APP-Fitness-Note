@@ -1,0 +1,15 @@
+== APP Fitness Note 
+Gastón Nicolás Campos <gaston.campos509@gmail.com>
+
+:title-page:
+:numbered:
+:source-highlighter: coderay
+:tabsize: 4
+
+== _Introducción_
+APP Fitness Note es una aplicacion android creado mediante lenguaje Kotlin,
+en la cual se puede hacer un plan de entrenamiento y permitirte llevar anotaciones en base a dicho entrenamiento.
+La aplicacion esta diriga al publico en general que siente que es necesario una pequeña herramienta para documentar
+todo su proceso en el mundo del fitness.
+
+
