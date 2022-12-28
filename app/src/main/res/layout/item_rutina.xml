@@ -3,26 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.view.MainActivity">
+    android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/button_ComenzarEntrenamiento"
+    <TextView
+        android:id="@+id/textView_NombreRutina"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="196dp"
-        android:text="@string/boton_comenzarEntrenamiento"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Rutina Pecho" />
 
-    <Button
-        android:id="@+id/button_cargarRutinas"
+    <TextView
+        android:id="@+id/textView_CantEjercicios"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="168dp"
-        android:text="@string/boton_cargarRutinas"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_ComenzarEntrenamiento" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_NombreRutina"
+        tools:text="Cantidad Ejercicios: 8" />
 </androidx.constraintlayout.widget.ConstraintLayout>

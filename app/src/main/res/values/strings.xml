@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">APP Fitness Note</string>
+    <string name="boton_comenzarEntrenamiento">Comenzar Entrenamiento</string>
+    <string name="boton_cargarRutinas">Cargar Rutinas</string>
+    <string name="boton_crearRutina">Crear una Rutina Nueva</string>
+
 </resources>
