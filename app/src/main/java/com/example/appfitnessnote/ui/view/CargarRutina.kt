@@ -12,20 +12,21 @@ import com.example.appfitnessnote.ui.view.adapters.itemsRutina.RutinaAdapter
 class CargarRutina : AppCompatActivity() {
     private lateinit var binding : ActivityCargarRutinaBinding
 
-    private val listOfRoutines = listOf("Pecho", "Espalda", "Pierna")
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_cargar_rutina)
-
         binding = ActivityCargarRutinaBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        initRecyclerView()
 
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
-        initRecyclerView()
     }
 
     fun initRecyclerView(){
+
+        val listOfRoutines = mutableListOf<String>("Pecho", "Espalda", "Pierna")
+
         val manager = LinearLayoutManager(this)
         val decoration = DividerItemDecoration(this, manager.orientation)
 
@@ -35,9 +36,7 @@ class CargarRutina : AppCompatActivity() {
         recycler.layoutManager = manager
         recycler.adapter = adapter
 
-        //recycler.addItemDecoration(decoration)
-        println(listOfRoutines)
-        Toast.makeText(this,"asd",Toast.LENGTH_LONG).show()
+        recycler.addItemDecoration(decoration)
     }
 
     override fun onBackPressed() {
